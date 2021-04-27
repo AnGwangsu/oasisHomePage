@@ -70,7 +70,9 @@ export default {
                     path:'/creator/benefit'
                 })
             }else if(number == 6){
-                console.log('partners')
+                this.$router.push({
+                    path:'/partners'
+                })
             }else if(number == 7){
                 console.log('work 1')
             }else if(number == 8){
