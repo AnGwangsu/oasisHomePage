@@ -27,7 +27,7 @@
                                 </v-expand-transition>
                             </v-hover>
                         </v-flex>
-                        <v-flex class="mx-10" style="cursor:pointer">PARTNERS</v-flex>
+                        <v-flex @click="movePage(6)" class="mx-10" style="cursor:pointer">PARTNERS</v-flex>
                         <v-flex class="mx-10" style="cursor:pointer">
                             <v-flex @mouseover="work=true" @mouseleave="work=false">WORK</v-flex>
                             <v-hover>
