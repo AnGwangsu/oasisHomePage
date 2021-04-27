@@ -1,0 +1,162 @@
+<template>
+    <v-container fluid style="padding:0;">
+        <Header/>
+        <v-layout>
+            <v-flex>
+                <full-page ref="fullpage" :option="options" id="fullpage">
+                    <v-layout justify-center class="section main_1">
+                        <v-flex>
+                            <v-flex>
+                                <v-flex class="mb-8" style="font-size:60px;font-weight:600">"가능성을 만들고 실현화 한다"</v-flex>
+                                <v-flex>창의적인 컨텐츠 기획 개발 온-오프라인 광고 제작사 ㈜오아시스미디어 입니다.</v-flex>
+                                <v-flex>전략적인 컨설팅과 새로운 아이디어로 브랜드 이미지와 정확한 타겟을 통한 다양한 광고,</v-flex>
+                                <v-flex>프로모션을 진행할 수 있는 종합 마케팅 솔루션 대행사 입니다.</v-flex>
+                            </v-flex>
+                            <v-layout class="mb-5" style="position:absolute; bottom:0;width:100%;">
+                                <v-flex class="scroll_container">
+                                    <v-flex class="scroll_icon"><v-icon color="#fff">mdi-arrow-down</v-icon></v-flex>
+                                    <v-flex class="scroll_icon">SCROLL</v-flex>
+                                </v-flex>
+                            </v-layout>
+                        </v-flex>
+                    </v-layout>
+                    <v-layout class="section main_2" >
+                        <v-flex>
+                            <v-flex class="mr-10 mt-15" style="text-align:right;position:absolute; top:0;right:0">
+                                <v-flex class="mt-15 mb-5" style="font-size:60px;font-weight:600">기획부터 촬영까지</v-flex>
+                                <v-flex style="font-size:40px">'ALL IN ONE PRODUCTION'</v-flex>
+                            </v-flex>
+                            <v-layout justify-center class="mb-15" style="position:absolute; bottom:0;width:100%;font-size:25px">
+                                <v-flex lg2>
+                                    <v-flex><img src="@/assets/img/icon/icon1.png"></v-flex>
+                                    <v-flex>브랜드 영상</v-flex>
+                                    <v-flex>기획</v-flex>
+                                </v-flex>
+                                <v-flex lg2>
+                                    <v-flex><img src="@/assets/img/icon/icon2.png"></v-flex>
+                                    <v-flex>브랜드 영상</v-flex>
+                                    <v-flex>활용</v-flex>
+                                </v-flex>
+                                <v-flex lg2>
+                                    <v-flex><img src="@/assets/img/icon/icon3.png"></v-flex>
+                                    <v-flex>브랜드 영상</v-flex>
+                                    <v-flex>제작</v-flex>
+                                </v-flex>
+                                <v-flex lg2>
+                                    <v-flex><img src="@/assets/img/icon/icon4.png"></v-flex>
+                                    <v-flex>브랜드 영상</v-flex>
+                                    <v-flex>홍보</v-flex>
+                                </v-flex>
+                            </v-layout>
+                        </v-flex>
+                    </v-layout>
+                    <v-layout class="section">
+                        <v-flex style="height:100%;">
+                            <v-layout style="height:50%">
+                                <v-flex xs6><img src="@/assets/img/background/section3_1.png" width="100%" height="100%"></v-flex>
+                                <v-flex xs6 class="px-5 py-10" style="font-size:40px;font-weight:600">
+                                    <v-flex>창의적인 아이디어와 트렌디 한 감성으로</v-flex>
+                                    <v-flex>시청자와 광고주 모두가 만족하는 오아시스 미디어</v-flex>
+                                </v-flex>
+                            </v-layout>
+                            <v-layout style="height:50%">
+                                <v-flex xs6 class="px-5 py-10" style="font-size:40px;font-weight:600">
+                                    <v-flex class="mb-15" style="text-align:center">다양한 영상 제작 경험을 통한 노하우</v-flex>
+                                    <v-flex style="text-align:right;font-size:25px">
+                                        <v-flex class="mb-7">지자체,관광지,행사<span class="ml-5">■</span></v-flex>
+                                        <v-flex class="mb-7">기업,브랜드,제품,매장<span class="ml-5">■</span></v-flex>
+                                        <v-flex class="mb-7">실시간LIVE방송<span class="ml-5">■</span></v-flex>
+                                        <v-flex class="mb-7">APP 서비스<span class="ml-5">■</span></v-flex>
+                                    </v-flex>
+                                </v-flex>
+                                <v-flex xs6><img src="@/assets/img/background/section3_2.png" width="100%" height="100%"></v-flex>
+                            </v-layout>
+                        </v-flex>
+                    </v-layout>
+                    <v-layout class="section">
+                        <v-flex style="height:100%;display:flex;flex-direction:column">
+                            <v-flex style="height:75%;flex:1">
+                                <v-flex class="my-15" style="font-size:40px;text-align:center;font-weight:600">오아시스 미디어는 자체 생산 체제입니다</v-flex>
+                                <v-layout justify-center class="my-10 px-15" style="font-size:32px;color:#fff">
+                                    <v-flex lg10>
+                                        <v-layout align-center justify-space-between>
+                                            <v-flex lg2 class="py-15 section4_1" style="border-radius:150px;">
+                                                <v-flex class="my-9" style="text-align:center">자체제작</v-flex>
+                                            </v-flex>
+                                            <v-flex lg2 class="py-15 section4_2" style="border-radius:150px;">
+                                                <v-flex class="my-3" style="text-align:center">
+                                                    <v-flex>빠른</v-flex>
+                                                    <v-flex>커뮤니케이션</v-flex>
+                                                </v-flex>
+                                            </v-flex>
+                                            <v-flex lg2 class="py-15 section4_3" style="border-radius:150px;">
+                                                <v-flex class="my-3" style="text-align:center">
+                                                    <v-flex>제작기간</v-flex>
+                                                    <v-flex>단축</v-flex>
+                                                </v-flex>
+                                            </v-flex>
+                                            <v-flex lg2 class="py-15 section4_4" style="border-radius:150px;">
+                                                <v-flex class="my-9" style="text-align:center">비용 감소</v-flex>
+                                            </v-flex>
+                                        </v-layout>
+                                    </v-flex>
+                                </v-layout>
+                                <v-flex  class="px-15 mt-15" style="font-size:18px;font-weight:600">
+                                    <v-flex class="mb-5">오아시스 미디어는 모든 영상을 자체 제작하고 있습니다.</v-flex>
+                                    <v-flex class="mb-5"> 클라이언트와 1:1 담당자를 배정하여 원활한 소통과 빠른 커뮤니케이션을 통한 기획부터 제작진행</v-flex>
+                                    <v-flex class="mb-5">외주 용역 투입, 임대 장비 대여로 인해 발생하는 비용을 절감하고 클라이언트의 의도를 정확히 반영하여</v-flex>
+                                    <v-flex class="mb-5">완벽한 영상을 제공하기 위해 직접 생산 체재로 운영되고 있습니다.</v-flex>
+                                </v-flex>
+                            </v-flex>
+                            <Footer/>
+                        </v-flex>
+                    </v-layout>
+                </full-page>
+            </v-flex>
+        </v-layout>
+    </v-container>
+</template>
+
+<script>
+import Footer from '@/components/common/Footer'
+import Header from '@/components/common/Header_white'
+export default {
+    components:{
+        Footer,
+        Header
+    },
+    data() {
+        return {
+            options: {
+                afterLoad: this.afterLoad,
+                navigation: true,
+                anchors: ['page1', 'page2', 'page3'],
+            },
+        }
+    },
+    created(){
+
+    },
+    methods:{
+        afterLoad(){
+            console.log('event')
+        }
+    }
+}
+</script>
+
+<style>
+    .fp-tableCell{display: flex; align-items: center;width:100%}
+    .main_1{background-image:url('../../assets/img/background/section1.png'); background-size: 100% 100%;background-position: center;color:#fff;position: relative;text-align: center;}
+    .main_2{background-image: url('../../assets/img/background/section2.png'); background-size: 100% 100%;background-position: center;color:#fff;position: relative;text-align: center;}
+    .section4_1{background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/img/background/section4_1.png'); background-size: 100% 100%;background-position: center;}
+    .section4_2{background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/img/background/section4_2.png'); background-size: 100% 100%;background-position: center;}
+    .section4_3{background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/img/background/section4_3.png'); background-size: 100% 100%;background-position: center;}
+    .section4_4{background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/img/background/section4_4.png'); background-size: 100% 100%;background-position: center;}
+    .scroll_container{margin-top: 20px;}
+    .scroll_icon{animation: motion 0.6s linear 0s infinite alternate;margin-top: 0;}
+    @keyframes motion {
+        0% {margin-top: 0px;}
+        100% {margin-top: 10px;}
+    }
+</style>
