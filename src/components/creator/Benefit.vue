@@ -123,7 +123,7 @@ export default {
 </script>
 
 <style>
- .benfit_1{background-image:url('../../assets/img/background/benefit_1.png'); background-size: 100% 100%;background-position: center;height:100%;position: relative;}
+ .benfit_1{background-image:url('../../assets/img/background/benefit_1.png'); background-size: 100% 100%;background-position: center;height:100%;}
  .benfit_2{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/img/background/benefit_2.png'); background-size: 100% 100%;background-position: center;height:100%;position: relative;}
  .benfit_3{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/img/background/benefit_3.png'); background-size: 100% 100%;background-position: center;height:100%;position: relative;}
  .benfit_4{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/img/background/benefit_4.png'); background-size: 100% 100%;background-position: center;height:100%;position: relative;}
