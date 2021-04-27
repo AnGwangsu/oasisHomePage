@@ -1,7 +1,7 @@
 <template>
     <v-app-bar color="rgba(255,255,255,0)" flat prominent>
             <v-layout class="mt-5" align-center justify-end>
-                <v-flex lg4 class="mt-5"><img src="@/assets/img/logo/header_logo_1.png"></v-flex>
+                <v-flex lg4 class="mt-5"><img @click="moveHome" src="@/assets/img/logo/header_logo_1.png" style="cursor:pointer"></v-flex>
                 <v-flex lg7 style="font-size:20px;font-weight:600">
                     <v-layout align-center justify-end>
                         <v-flex class="mx-10" style="cursor:pointer">ABOUT</v-flex>
@@ -10,7 +10,7 @@
                             <v-flex @mouseover="business=true" @mouseleave="business=false">BUSINESS</v-flex>
                             <v-hover>
                                 <v-expand-transition>
-                                    <v-flex @mouseover="business=true" @mouseleave="business=false" v-if="business==true" class="mt-1 transition-fast-in-fast-out" style="position:absolute;font-size:14px">
+                                    <v-flex @mouseover="business=true" @mouseleave="business=false" v-if="business==true" class="mt-1 transition-fast-in-fast-out" style="position:absolute;font-size:14px;">
                                         BRAND CHANNEL
                                     </v-flex>
                                 </v-expand-transition>
@@ -56,6 +56,11 @@ export default {
         }
     },
     methods:{
+        moveHome(){
+            this.$router.push({
+                path:'/'
+            })
+        },
         movePage(number){
             if(number ==1){
                 console.log('about')

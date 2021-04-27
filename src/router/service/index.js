@@ -1,5 +1,6 @@
 import Benefit from '@/components/creator/Benefit'
 import Partners from '@/components/partners/Partners'
+import BrandChennel from '@/components/business/BrandChennel'
 
 export default [
     {
@@ -11,5 +12,10 @@ export default [
         path:'/partners',
         name:'Partners',
         component:Partners
+    },
+    {
+        path:'/business/brandChennel',
+        name:'BrandChennel',
+        component:BrandChennel
     }
 ]
