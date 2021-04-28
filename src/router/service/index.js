@@ -2,6 +2,7 @@ import Benefit from '@/components/creator/Benefit'
 import Partners from '@/components/partners/Partners'
 import BrandChennel from '@/components/business/BrandChennel'
 import Work from '@/components/work/Work'
+import List from '@/components/creator/List'
 
 export default [
     {
@@ -23,5 +24,10 @@ export default [
         path:'/work',
         name:'Work',
         component:Work
+    },
+    {
+        path:'/creator/list',
+        name:'List',
+        component:List
     }
 ]

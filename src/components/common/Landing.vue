@@ -2,7 +2,7 @@
     <v-container fluid style="padding:0;">
         <v-layout>
             <v-flex>
-                <full-page ref="fullpage" :option="options" id="fullpage">
+                <full-page ref="fullpage" :option="options" id="fullpage1">
                     <v-layout class="section main_1">
                         <v-flex>
                             <Header/>
@@ -20,7 +20,7 @@
                             </v-layout>
                         </v-flex>
                     </v-layout>
-                    <v-layout class="section main_2" >
+                    <v-layout class="section main_2">
                         <v-flex>
                             <v-flex class="mr-10 mt-15" style="text-align:right;position:absolute; top:0;right:0">
                                 <v-flex class="mt-15 mb-5" style="font-size:60px;font-weight:600">기획부터 촬영까지</v-flex>
@@ -130,17 +130,12 @@ export default {
             options: {
                 afterLoad: this.afterLoad,
                 navigation: true,
-                anchors: ['page1', 'page2', 'page3'],
+                anchors: ['landing1', 'landing2', 'landing3','landing4'],
             },
         }
     },
-    created(){
-
-    },
     methods:{
-        afterLoad(){
-            console.log('event')
-        }
+    
     }
 }
 </script>
