@@ -21,7 +21,7 @@
                             <v-hover>
                                 <v-expand-transition>
                                     <v-flex @mouseover="creator=true" @mouseleave="creator=false" v-if="creator==true" class="mt-1 transition-fast-in-fast-out" style="position:absolute;font-size:14px">
-                                        <v-flex class="mb-1">LIST</v-flex>
+                                        <v-flex @click="movePage(4)" class="mb-1">LIST</v-flex>
                                         <v-flex @click="movePage(5)">BENEFITS</v-flex>
                                     </v-flex>
                                 </v-expand-transition>
@@ -64,18 +64,20 @@ export default {
         movePage(number){
             if(number ==1){
                 this.$router.push({
-                    path:'/'
+                    name:'Landing',
                 })
             }else if(number ==2){
                 this.$router.push({
-                    path:'/'
+                    name:'Landing',
                 })
             }else if(number == 3){
                 this.$router.push({
                     path:'/business/brandChennel'
                 })
             }else if(number == 4){
-                console.log('creator list')
+                this.$router.push({
+                    path:'/creator/list'
+                })
             }else if(number == 5){
                 this.$router.push({
                     path:'/creator/benefit'
