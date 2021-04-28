@@ -4,8 +4,8 @@
                 <v-flex lg4 class="mt-5"><img @click="moveHome" src="@/assets/img/logo/header_logo_1.png" style="cursor:pointer"></v-flex>
                 <v-flex lg7 style="font-size:20px;font-weight:600">
                     <v-layout align-center justify-end>
-                        <v-flex class="mx-10" style="cursor:pointer">ABOUT</v-flex>
-                        <v-flex class="mx-10" style="cursor:pointer">OASIS MEDIA</v-flex>
+                        <v-flex @click="movePage(1)" class="mx-10" style="cursor:pointer">ABOUT</v-flex>
+                        <v-flex @click="movePage(2)" class="mx-10" style="cursor:pointer">OASIS MEDIA</v-flex>
                         <v-flex class="mx-10" style="cursor:pointer">
                             <v-flex @click="movePage(3)" @mouseover="business=true" @mouseleave="business=false">BUSINESS</v-flex>
                             <v-hover>
@@ -29,13 +29,13 @@
                         </v-flex>
                         <v-flex @click="movePage(6)" class="mx-10" style="cursor:pointer">PARTNERS</v-flex>
                         <v-flex class="mx-10" style="cursor:pointer">
-                            <v-flex @mouseover="work=true" @mouseleave="work=false">WORK</v-flex>
+                            <v-flex @click="movePage(7)" @mouseover="work=true" @mouseleave="work=false">WORK</v-flex>
                             <v-hover>
                                 <v-expand-transition>
-                                    <v-flex @mouseover="work=true" @mouseleave="work=false" v-if="work==true" class="mt-1 transition-fast-in-fast-out" style="position:absolute;font-size:14px">
-                                        <v-flex class="mb-1">WELFARE</v-flex>
-                                        <v-flex class="mb-1">OFFICE</v-flex>
-                                        <v-flex>RECRUIT</v-flex>
+                                    <v-flex @click="movePage(7)" @mouseover="work=true" @mouseleave="work=false" v-if="work==true" class="mt-1 transition-fast-in-fast-out" style="position:absolute;font-size:14px">
+                                        <v-flex @click="movePage(7)" class="mb-1">WELFARE</v-flex>
+                                        <v-flex @click="movePage(7)" class="mb-1">OFFICE</v-flex>
+                                        <v-flex @click="movePage(7)">RECRUIT</v-flex>
                                     </v-flex>
                                 </v-expand-transition>
                             </v-hover>
@@ -63,9 +63,13 @@ export default {
         },
         movePage(number){
             if(number ==1){
-                console.log('about')
+                this.$router.push({
+                    path:'/'
+                })
             }else if(number ==2){
-                console.log('oasis media')
+                this.$router.push({
+                    path:'/'
+                })
             }else if(number == 3){
                 this.$router.push({
                     path:'/business/brandChennel'
@@ -80,12 +84,10 @@ export default {
                 this.$router.push({
                     path:'/partners'
                 })
-            }else if(number == 7){
-                console.log('work 1')
-            }else if(number == 8){
-                console.log('work 2')
             }else{
-                console.log('work 3')
+                this.$router.push({
+                    path:'/work'
+                })
             }
         }    
     }
