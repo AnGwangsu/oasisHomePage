@@ -24,19 +24,23 @@
                                     <v-flex>크리에이터 맞춤 솔루션을 제공합니다.</v-flex>
                                 </v-flex>
                             </v-layout>
-                            <v-layout style="font-size:30px;position:absolute;bottom:10%;width:100%">
+                            <v-layout class="px-15" align-center style="font-size:30px;position:absolute;bottom:10%;width:100%">
+                                <v-flex style="height:1px; border:2px dashed #fff"></v-flex>
                                 <v-flex style="text-align:center">
                                     <v-flex>데이터에 기반한</v-flex>
                                     <v-flex>채널 컨설팅 및 피드백 제공</v-flex>
                                 </v-flex>
+                                <v-flex style="height:1px; border:2px dashed #fff"></v-flex>
                                 <v-flex style="text-align:center">
                                     <v-flex>트렌드 분석을 통한</v-flex>
                                     <v-flex>콘텐츠 아이디어 제공</v-flex>
                                 </v-flex>
+                                <v-flex style="height:1px; border:2px dashed #fff"></v-flex>
                                 <v-flex style="text-align:center">
                                     <v-flex>크리에이터</v-flex>
                                     <v-flex>콜라보 기회 제공</v-flex>
                                 </v-flex>
+                                <v-flex style="height:1px; border:2px dashed #fff"></v-flex>
                             </v-layout>
                         </v-flex>
                     </v-layout>
@@ -48,18 +52,22 @@
                                     <v-flex>오직 여러분이 원하는 광고를 제작 합니다.</v-flex>
                                 </v-flex>
                             </v-layout>
-                            <v-layout style="font-size:30px;position:absolute;bottom:10%;width:100%">
+                            <v-layout align-center class="px-15" style="font-size:30px;position:absolute;bottom:10%;width:100%">
+                                <v-flex style="height:1px; border:2px dashed #fff"></v-flex>
                                 <v-flex style="text-align:center">
                                     <v-flex>스튜디오 대관</v-flex>
                                     <v-flex>및 장비 지원</v-flex>
                                 </v-flex>
+                                <v-flex style="height:1px; border:2px dashed #fff"></v-flex>
                                 <v-flex style="text-align:center">
                                     <v-flex>콘텐츠 제작 지원</v-flex>
                                 </v-flex>
+                                <v-flex style="height:1px; border:2px dashed #fff"></v-flex>
                                 <v-flex style="text-align:center">
                                     <v-flex>자막 번역</v-flex>
                                     <v-flex>언어 서비스 지원</v-flex>
                                 </v-flex>
+                                <v-flex style="height:1px; border:2px dashed #fff"></v-flex>
                             </v-layout>
                         </v-flex>
                     </v-layout>
@@ -72,20 +80,24 @@
                                         <v-flex>오아시스는 비즈니스 환경을 조성합니다.</v-flex>
                                     </v-flex>
                                 </v-layout>
-                                <v-layout style="font-size:30px;position:absolute;bottom:30%;width:100%">
+                                <v-layout align-center class="px-15" style="font-size:30px;position:absolute;bottom:30%;width:100%">
+                                    <v-flex style="height:1px; border:2px dashed #fff"></v-flex>
                                     <v-flex style="text-align:center">
                                         <v-flex>브랜디드/PPL</v-flex>
                                         <v-flex>광고 대행</v-flex>
                                     </v-flex>
+                                    <v-flex style="height:1px; border:2px dashed #fff"></v-flex>
                                     <v-flex style="text-align:center">
                                         <v-flex>브랜드 채널 출연 및</v-flex>
                                         <v-flex>오프라인 행사</v-flex>
                                         <v-flex>참여 기회 제공</v-flex>
                                     </v-flex>
+                                    <v-flex style="height:1px; border:2px dashed #fff"></v-flex>
                                     <v-flex style="text-align:center">
                                         <v-flex>커머스</v-flex>
                                         <v-flex>연계 기회 제공</v-flex>
                                     </v-flex>
+                                    <v-flex style="height:1px; border:2px dashed #fff"></v-flex>
                                 </v-layout>
                             </v-flex>
                             <Footer/>
