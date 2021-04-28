@@ -1,18 +1,18 @@
 <template>
     <v-container fluid style="padding:0;">
-        <Header/>
         <v-layout>
             <v-flex>
                 <full-page ref="fullpage" :option="options" id="fullpage">
-                    <v-layout justify-center class="section main_1">
+                    <v-layout class="section main_1">
                         <v-flex>
-                            <v-flex>
+                            <Header/>
+                            <v-flex style="text-align:center">
                                 <v-flex class="mb-8" style="font-size:60px;font-weight:600">"가능성을 만들고 실현화 한다"</v-flex>
                                 <v-flex>창의적인 컨텐츠 기획 개발 온-오프라인 광고 제작사 ㈜오아시스미디어 입니다.</v-flex>
                                 <v-flex>전략적인 컨설팅과 새로운 아이디어로 브랜드 이미지와 정확한 타겟을 통한 다양한 광고,</v-flex>
                                 <v-flex>프로모션을 진행할 수 있는 종합 마케팅 솔루션 대행사 입니다.</v-flex>
                             </v-flex>
-                            <v-layout class="mb-5" style="position:absolute; bottom:0;width:100%;">
+                            <v-layout class="mb-5" style="position:absolute; bottom:0;width:100%;text-align:center">
                                 <v-flex class="scroll_container">
                                     <v-flex class="scroll_icon"><v-icon color="#fff">mdi-arrow-down</v-icon></v-flex>
                                     <v-flex class="scroll_icon">SCROLL</v-flex>
@@ -147,7 +147,7 @@ export default {
 
 <style>
     .fp-tableCell{display: flex; align-items: center;width:100%}
-    .main_1{background-image:url('../../assets/img/background/section1.png'); background-size: 100% 100%;background-position: center;color:#fff;position: relative;text-align: center;}
+    .main_1{background-image:url('../../assets/img/background/section1.png'); background-size: 100% 100%;background-position: center;color:#fff;position: relative;}
     .main_2{background-image: url('../../assets/img/background/section2.png'); background-size: 100% 100%;background-position: center;color:#fff;position: relative;text-align: center;}
     .section4_1{background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/img/background/section4_1.png'); background-size: 100% 100%;background-position: center;}
     .section4_2{background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/img/background/section4_2.png'); background-size: 100% 100%;background-position: center;}

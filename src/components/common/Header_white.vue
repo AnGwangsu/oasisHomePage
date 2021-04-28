@@ -7,10 +7,10 @@
                         <v-flex class="mx-10" style="cursor:pointer">ABOUT</v-flex>
                         <v-flex class="mx-10" style="cursor:pointer">OASIS MEDIA</v-flex>
                         <v-flex class="mx-10" style="cursor:pointer">
-                            <v-flex @mouseover="business=true" @mouseleave="business=false">BUSINESS</v-flex>
+                            <v-flex @mouseover="business=true" @mouseleave="business=false" @click="movePage(3)">BUSINESS</v-flex>
                             <v-hover>
                                 <v-expand-transition>
-                                    <v-flex @mouseover="business=true" @mouseleave="business=false" v-if="business==true" class="mt-1 transition-fast-in-fast-out white--text" style="position:absolute;font-size:14px;height:40px">
+                                    <v-flex @click="movePage(3)" @mouseover="business=true" @mouseleave="business=false" v-if="business==true" class="mt-1 transition-fast-in-fast-out white--text" style="position:absolute;font-size:14px;height:40px">
                                         BRAND CHANNEL
                                     </v-flex>
                                 </v-expand-transition>
@@ -67,7 +67,9 @@ export default {
             }else if(number ==2){
                 console.log('oasis media')
             }else if(number == 3){
-                console.log('business')
+                this.$router.push({
+                    path:'/business/brandChennel'
+                })
             }else if(number == 4){
                 console.log('creator list')
             }else if(number == 5){
