@@ -61,7 +61,7 @@
                                 </v-carousel>
                             </v-flex>
                             <v-flex lg6>
-                                <v-flex style="text-align:center;font-size:23px"><v-icon size="30" color="#fff">mdi-map-marker</v-icon>서울특별시 강남구 역삼로 247, 홍진빌딩 3층</v-flex>
+                                <v-flex class="mr-15" style="text-align:center;font-size:23px"><v-icon size="30" color="#fff">mdi-map-marker</v-icon>서울특별시 금천구 가산디지털로 2로 136, 801호 (-33)(가산동,승일벤처타워)</v-flex>
                                 <v-flex class="pa-6" style="height:100%">
                                     <vue-daum-map
                                     :appKey="appKey"
@@ -126,7 +126,7 @@ export default {
         ],
 
             appKey: config.appKey,
-            center: {lat:37.49795197946359, lng:127.04314957737654}, // 지도의 중심 좌표
+            center: {lat:37.466921132779405, lng:126.88816005535757}, // 지도의 중심 좌표
             level: 2, // 지도의 레벨(확대, 축소 정도),
             mapTypeId: VueDaumMap.MapTypeId.NORMAL, // 맵 타입
             libraries: [], // 추가로 불러올 라이브러리
@@ -136,7 +136,7 @@ export default {
     methods:{
         onLoad(map){
             this.map = map;
-            var markerPosition = new kakao.maps.LatLng(37.49795197946359,127.04314957737654)
+            var markerPosition = new kakao.maps.LatLng(37.466921132779405,126.88816005535757)
             var marker = new kakao.maps.Marker({
                 position: markerPosition,
             })
