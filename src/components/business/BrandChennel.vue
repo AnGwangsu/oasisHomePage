@@ -2,7 +2,7 @@
     <v-container fluid style="padding:0">
         <v-layout>
             <v-flex>
-                <full-page ref="fullpage" :option="options" id="fullpage">
+                <full-page ref="fullpage" id="fullpage">
                     <v-layout class="section">
                         <v-flex class="business_1">
                             <Header/>
@@ -78,18 +78,11 @@ export default {
     },
     data() {
         return {
-            options: {
-                afterLoad: this.afterLoad,
-                navigation: true,
-                anchors: ['page1', 'page2', 'page3','page4'],
-                autoScrolling:false,
-            },
+            
         }
     },
     methods:{
-        afterLoad(){
-            console.log('event')
-        }
+        
     }
 }
 </script>

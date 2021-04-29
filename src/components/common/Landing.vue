@@ -2,10 +2,54 @@
     <v-container fluid style="padding:0;">
         <v-layout>
             <v-flex>
-                <full-page ref="fullpage" :option="options" id="fullpage1">
+                <full-page ref="fullpage" id="fullpage1">
                     <v-layout class="section main_1">
                         <v-flex>
-                            <Header/>
+                            <v-app-bar absolute color="rgba(255,255,255,0)" flat prominent>
+                                <v-layout class="mt-5" align-center justify-end>
+                                    <v-flex lg4 class="mt-5"><img src="@/assets/img/logo/header_logo.png" style="cursor:pointer"></v-flex>
+                                    <v-flex lg7 style="color:#fff;font-size:20px;font-weight:600">
+                                        <v-layout align-center justify-end>
+                                            <v-flex @click="$refs.fullpage.api.moveTo(1)" class="mx-10" style="cursor:pointer">ABOUT</v-flex>
+                                            <v-flex ref="media" @click="$refs.fullpage.api.moveTo(3)" class="mx-10" style="cursor:pointer">OASIS MEDIA</v-flex>
+                                            <v-flex class="mx-10" style="cursor:pointer">
+                                                <v-flex @mouseover="business=true" @mouseleave="business=false" @click="movePage(3)">BUSINESS</v-flex>
+                                                <v-hover>
+                                                    <v-expand-transition>
+                                                        <v-flex @click="movePage(3)" @mouseover="business=true" @mouseleave="business=false" v-if="business==true" class="mt-1 transition-fast-in-fast-out white--text" style="position:absolute;font-size:14px;height:40px">
+                                                            BRAND CHANNEL
+                                                        </v-flex>
+                                                    </v-expand-transition>
+                                                </v-hover>
+                                            </v-flex>
+                                            <v-flex class="mx-10" style="cursor:pointer">
+                                                <v-flex @mouseover="creator=true" @mouseleave="creator=false">CREATOR</v-flex>
+                                                <v-hover>
+                                                    <v-expand-transition>
+                                                        <v-flex @mouseover="creator=true" @mouseleave="creator=false" v-if="creator==true" class="mt-1 transition-fast-in-fast-out white--text" style="position:absolute;font-size:14px">
+                                                            <v-flex @click="movePage(4)" class="mb-1">LIST</v-flex>
+                                                            <v-flex @click="movePage(5)">BENEFITS</v-flex>
+                                                        </v-flex>
+                                                    </v-expand-transition>
+                                                </v-hover>
+                                            </v-flex>
+                                            <v-flex @click="movePage(6)" class="mx-10" style="cursor:pointer">PARTNERS</v-flex>
+                                            <v-flex class="mx-10" style="cursor:pointer">
+                                                <v-flex @click="movePage(7)" @mouseover="work=true" @mouseleave="work=false">WORK</v-flex>
+                                                <v-hover>
+                                                    <v-expand-transition>
+                                                        <v-flex @click="movePage(7)" @mouseover="work=true" @mouseleave="work=false" v-if="work==true" class="mt-1 transition-fast-in-fast-out white--text" style="position:absolute;font-size:14px">
+                                                            <v-flex @click="movePage(7)" class="mb-1">WELFARE</v-flex>
+                                                            <v-flex @click="movePage(7)" class="mb-1">OFFICE</v-flex>
+                                                            <v-flex @click="movePage(7)">RECRUIT</v-flex>
+                                                        </v-flex>
+                                                    </v-expand-transition>
+                                                </v-hover>
+                                            </v-flex>
+                                        </v-layout>
+                                    </v-flex>
+                                </v-layout>
+                            </v-app-bar>
                             <v-flex style="text-align:center">
                                 <v-flex class="mb-8" style="font-size:60px;font-weight:600">"가능성을 만들고 실현화 한다"</v-flex>
                                 <v-flex>창의적인 컨텐츠 기획 개발 온-오프라인 광고 제작사 ㈜오아시스미디어 입니다.</v-flex>
@@ -119,23 +163,47 @@
 
 <script>
 import Footer from '@/components/common/Footer'
-import Header from '@/components/common/Header_white'
 export default {
     components:{
         Footer,
-        Header
     },
     data() {
         return {
-            options: {
-                afterLoad: this.afterLoad,
-                navigation: true,
-                anchors: ['landing1', 'landing2', 'landing3','landing4'],
-            },
+            business:false,
+            creator:false,
+            work:false
+        }
+    },
+    mounted(){
+        if(this.$route.params.view){
+            console.log('왜안돼')
+            this.$refs.media.click()
         }
     },
     methods:{
-    
+        movePage(number){
+            if(number == 3){
+                this.$router.push({
+                    path:'/business/brandChennel'
+                })
+            }else if(number == 4){
+                this.$router.push({
+                    path:'/creator/list'
+                })
+            }else if(number == 5){
+                this.$router.push({
+                    path:'/creator/benefit'
+                })
+            }else if(number == 6){
+                this.$router.push({
+                    path:'/partners'
+                })
+            }else{
+                this.$router.push({
+                    path:'/work'
+                })
+            }
+        }
     }
 }
 </script>
