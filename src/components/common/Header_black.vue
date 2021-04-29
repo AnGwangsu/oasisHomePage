@@ -69,6 +69,9 @@ export default {
             }else if(number ==2){
                 this.$router.push({
                     name:'Landing',
+                    params:{
+                        view:3
+                    }
                 })
             }else if(number == 3){
                 this.$router.push({
