@@ -62,7 +62,7 @@
                                 </v-flex>
                             </v-flex>
                         </v-layout>
-                        <v-flex class="mt-15" style="font-size:40px;text-align:center;font-weight:600">1000명의 인플루언서와 함께합니다</v-flex>
+                        <v-flex class="mt-15" style="font-size:40px;text-align:center;font-weight:600">1000여명의 인플루언서와 함께합니다</v-flex>
                     </v-flex>
                 </v-flex>
             </v-flex>
