@@ -1,8 +1,8 @@
 <template>
     <v-app-bar color="rgba(255,255,255,0)" flat prominent>
             <v-layout class="mt-5" align-center justify-end>
-                <v-flex lg4 class="mt-5"><img @click="moveHome" src="@/assets/img/logo/header_logo_1.png" style="cursor:pointer"></v-flex>
-                <v-flex lg7 style="font-size:20px;font-weight:600">
+                <v-flex md3 lg4 class="mt-5"><img @click="moveHome" src="@/assets/img/logo/header_logo_1.png" style="cursor:pointer"></v-flex>
+                <v-flex md8 lg7 style="font-size:18px;font-weight:600">
                     <v-layout align-center justify-end>
                         <v-flex @click="movePage(1)" class="mx-10" style="cursor:pointer">ABOUT</v-flex>
                         <v-flex @click="movePage(2)" class="mx-10" style="cursor:pointer">OASIS MEDIA</v-flex>
