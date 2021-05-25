@@ -54,28 +54,20 @@ export default {
     //   localStorage.removeItem('isMobile')
     // },
     mobileCheck(){
-      if(localStorage.getItem('exist')){
-        return false
-      }else{
-        var pcDevice = "win16|win32|win64|mac|macintel";
+      var pcDevice = "win16|win32|win64|mac|macintel";
         if ( navigator.platform ) {
           if ( pcDevice.indexOf(navigator.platform.toLowerCase()) < 0 ) {
-              localStorage.setItem('isMobile',true)
-              this.isMobile=localStorage.getItem('isMobile')
-              localStorage.setItem('exist',1)
+              this.isMobile=true
               this.$router.push({
                 path:'/m'
               })
           } else {
-              localStorage.setItem('isMobile',false)
-              this.isMobile=localStorage.getItem('isMobile')
-              localStorage.setItem('exist',1)
+              this.isMobile=false
               this.$router.push({
                 path:'/'
               })
           }
-        } 
-      }
+        }   
     }
   }
 };

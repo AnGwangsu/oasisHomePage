@@ -3,7 +3,7 @@
         <v-layout>
             <v-flex>
                 <full-page ref="fullpage" id="fullpage1">
-                    <v-layout class="section main_1">
+                    <v-layout class="section main_1_web">
                         <v-flex>
                             <v-app-bar absolute color="rgba(255,255,255,0)" flat prominent min-width="1300px">
                                 <v-layout class="mt-5" align-center justify-end>
@@ -68,7 +68,7 @@
                             </v-layout>
                         </v-flex>
                     </v-layout>
-                    <v-layout class="section main_2">
+                    <v-layout class="section main_2_web">
                         <v-flex>
                             <v-flex class="mr-10 mt-15" style="text-align:right;position:absolute; top:0;right:0">
                                 <v-flex class="mt-15 mb-5" style="font-size:60px;font-weight:600">기획부터 촬영까지</v-flex>
@@ -98,7 +98,7 @@
                             </v-layout>
                         </v-flex>
                     </v-layout>
-                    <v-layout class="section main_3">
+                    <v-layout class="section main_3_web">
                         <v-flex style="height:100%;">
                             <v-layout style="height:50%">
                                 <v-flex xs6><img src="@/assets/web/img/background/section3_1.png" width="100%" height="100%"></v-flex>
@@ -121,7 +121,7 @@
                             </v-layout>
                         </v-flex>
                     </v-layout>
-                    <v-layout class="section main_4">
+                    <v-layout class="section main_4_web">
                         <v-flex style="height:100%;display:flex;flex-direction:column">
                             <v-flex style="height:75%;flex:1">
                                 <v-flex class="my-15" style="font-size:40px;text-align:center;font-weight:600">오아시스 미디어는 자체 생산 체제입니다</v-flex>
@@ -225,10 +225,10 @@ export default {
 
 <style>
     .fp-tableCell{display: flex; align-items: center;width:100%}
-    .main_1{background-image:url('../../../assets/web/img/background/section1.png'); background-size: 100% 100%;background-position: center;color:#fff;position: relative;min-width:1300px;}
-    .main_2{background-image: url('../../../assets/web/img/background/section2.png'); background-size: 100% 100%;background-position: center;color:#fff;position: relative;text-align: center; min-width: 1300px;}
-    .main_3{min-width: 1300px;}
-    .main_4{min-width: 1300px;}
+    .main_1_web{background-image:url('../../../assets/web/img/background/section1.png'); background-size: 100% 100%;background-position: center;color:#fff;position: relative;min-width:1300px;}
+    .main_2_web{background-image: url('../../../assets/web/img/background/section2.png'); background-size: 100% 100%;background-position: center;color:#fff;position: relative;text-align: center; min-width: 1300px;}
+    .main_3_web{min-width: 1300px;}
+    .main_4_web{min-width: 1300px;}
     .section4_1{background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../../assets/web/img/background/section4_1.png'); background-size: 100% 100%;background-position: center;width:250px;height:250px;border-radius: 70%;overflow: hidden;}
     .section4_2{background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../../assets/web/img/background/section4_2.png'); background-size: 100% 100%;background-position: center;width:250px;height:250px;border-radius: 70%;overflow: hidden;}
     .section4_3{background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../../assets/web/img/background/section4_3.png'); background-size: 100% 100%;background-position: center;width:250px;height:250px;border-radius: 70%;overflow: hidden;}
