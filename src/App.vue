@@ -31,8 +31,8 @@ export default {
   name: 'App',
   data() {
     return {
-      isMobile:true,
-      dialog:false
+      dialog:false,
+      isMobile:false
     }
   },
   // beforeDestroy(){
@@ -45,24 +45,37 @@ export default {
   //   window.addEventListener('resize',this.onResize,{passive:true})
   // },
   created(){
+    // window.addEventListener('beforeunload',this.removeExist)
     this.mobileCheck()
   },
   methods:{
+    // removeExist(){
+    //   localStorage.removeItem('exist')
+    //   localStorage.removeItem('isMobile')
+    // },
     mobileCheck(){
-      var pcDevice = "win16|win32|win64|mac|macintel";
-      if ( navigator.platform ) {
-        if ( pcDevice.indexOf(navigator.platform.toLowerCase()) < 0 ) {
-            this.isMobile=true
-            this.$router.push({
-              path:'/m'
-            })
-        } else {
-          this.isMobile=false
-            this.$router.push({
-              path:'/'
-            })
-        }
-      }  
+      if(localStorage.getItem('exist')){
+        return false
+      }else{
+        var pcDevice = "win16|win32|win64|mac|macintel";
+        if ( navigator.platform ) {
+          if ( pcDevice.indexOf(navigator.platform.toLowerCase()) < 0 ) {
+              localStorage.setItem('isMobile',true)
+              this.isMobile=localStorage.getItem('isMobile')
+              localStorage.setItem('exist',1)
+              this.$router.push({
+                path:'/m'
+              })
+          } else {
+              localStorage.setItem('isMobile',false)
+              this.isMobile=localStorage.getItem('isMobile')
+              localStorage.setItem('exist',1)
+              this.$router.push({
+                path:'/'
+              })
+          }
+        } 
+      }
     }
   }
 };

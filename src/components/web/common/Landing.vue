@@ -5,46 +5,50 @@
                 <full-page ref="fullpage" id="fullpage1">
                     <v-layout class="section main_1">
                         <v-flex>
-                            <v-app-bar absolute color="rgba(255,255,255,0)" flat prominent>
+                            <v-app-bar absolute color="rgba(255,255,255,0)" flat prominent min-width="1300px">
                                 <v-layout class="mt-5" align-center justify-end>
-                                    <v-flex md3 lg4 class="mt-5"><img src="@/assets/web/img/logo/header_logo.png" style="cursor:pointer"></v-flex>
-                                    <v-flex md8 lg7 style="color:#fff;font-size:18px;font-weight:600">
-                                        <v-layout align-center justify-end>
-                                            <v-flex @click="$refs.fullpage.api.moveTo(1)" class="mx-10" style="cursor:pointer">ABOUT</v-flex>
-                                            <v-flex ref="media" @click="$refs.fullpage.api.moveTo(3)" class="mx-10" style="cursor:pointer">OASIS MEDIA</v-flex>
-                                            <v-flex class="mx-10" style="cursor:pointer">
-                                                <v-flex @mouseover="business=true" @mouseleave="business=false" @click="movePage(3)">BUSINESS</v-flex>
-                                                <v-hover>
-                                                    <v-expand-transition>
-                                                        <v-flex @click="movePage(3)" @mouseover="business=true" @mouseleave="business=false" v-if="business==true" class="mt-1 transition-fast-in-fast-out white--text" style="position:absolute;font-size:14px;height:40px">
-                                                            BRAND CHANNEL
-                                                        </v-flex>
-                                                    </v-expand-transition>
-                                                </v-hover>
-                                            </v-flex>
-                                            <v-flex class="mx-10" style="cursor:pointer">
-                                                <v-flex @mouseover="creator=true" @mouseleave="creator=false">CREATOR</v-flex>
-                                                <v-hover>
-                                                    <v-expand-transition>
-                                                        <v-flex @mouseover="creator=true" @mouseleave="creator=false" v-if="creator==true" class="mt-1 transition-fast-in-fast-out white--text" style="position:absolute;font-size:14px">
-                                                            <v-flex @click="movePage(4)" class="mb-1">LIST</v-flex>
-                                                            <v-flex @click="movePage(5)">BENEFITS</v-flex>
-                                                        </v-flex>
-                                                    </v-expand-transition>
-                                                </v-hover>
-                                            </v-flex>
-                                            <v-flex @click="movePage(6)" class="mx-10" style="cursor:pointer">PARTNERS</v-flex>
-                                            <v-flex class="mx-10" style="cursor:pointer">
-                                                <v-flex @click="movePage(7)" @mouseover="work=true" @mouseleave="work=false">WORK</v-flex>
-                                                <v-hover>
-                                                    <v-expand-transition>
-                                                        <v-flex @click="movePage(7)" @mouseover="work=true" @mouseleave="work=false" v-if="work==true" class="mt-1 transition-fast-in-fast-out white--text" style="position:absolute;font-size:14px">
-                                                            <v-flex @click="movePage(7)" class="mb-1">WELFARE</v-flex>
-                                                            <v-flex @click="movePage(7)" class="mb-1">OFFICE</v-flex>
-                                                            <v-flex @click="movePage(7)">RECRUIT</v-flex>
-                                                        </v-flex>
-                                                    </v-expand-transition>
-                                                </v-hover>
+                                    <v-flex xs2 class="mt-5" style="text-align:center"><img src="@/assets/web/img/logo/header_logo.png" style="cursor:pointer"></v-flex>
+                                    <v-flex xs10 style="color:#fff;font-size:18px;font-weight:600">
+                                        <v-layout justify-end>
+                                            <v-flex xs10>
+                                                <v-layout align-center justify-end>
+                                                    <v-flex @click="$refs.fullpage.api.moveTo(1)" class="mx-5" style="cursor:pointer">ABOUT</v-flex>
+                                                    <v-flex ref="media" @click="$refs.fullpage.api.moveTo(3)" class="mx-5" style="cursor:pointer">OASIS MEDIA</v-flex>
+                                                    <v-flex class="mx-5" style="cursor:pointer">
+                                                        <v-flex @mouseover="business=true" @mouseleave="business=false" @click="movePage(3)">BUSINESS</v-flex>
+                                                        <v-hover>
+                                                            <v-expand-transition>
+                                                                <v-flex @click="movePage(3)" @mouseover="business=true" @mouseleave="business=false" v-if="business==true" class="mt-1 transition-fast-in-fast-out white--text" style="position:absolute;font-size:14px;height:40px">
+                                                                    BRAND CHANNEL
+                                                                </v-flex>
+                                                            </v-expand-transition>
+                                                        </v-hover>
+                                                    </v-flex>
+                                                    <v-flex class="mx-5" style="cursor:pointer">
+                                                        <v-flex @mouseover="creator=true" @mouseleave="creator=false">CREATOR</v-flex>
+                                                        <v-hover>
+                                                            <v-expand-transition>
+                                                                <v-flex @mouseover="creator=true" @mouseleave="creator=false" v-if="creator==true" class="mt-1 transition-fast-in-fast-out white--text" style="position:absolute;font-size:14px">
+                                                                    <v-flex @click="movePage(4)" class="mb-1">LIST</v-flex>
+                                                                    <v-flex @click="movePage(5)">BENEFITS</v-flex>
+                                                                </v-flex>
+                                                            </v-expand-transition>
+                                                        </v-hover>
+                                                    </v-flex>
+                                                    <v-flex @click="movePage(6)" class="mx-5" style="cursor:pointer">PARTNERS</v-flex>
+                                                    <v-flex class="mx-5" style="cursor:pointer">
+                                                        <v-flex @click="movePage(7)" @mouseover="work=true" @mouseleave="work=false">WORK</v-flex>
+                                                        <v-hover>
+                                                            <v-expand-transition>
+                                                                <v-flex @click="movePage(7)" @mouseover="work=true" @mouseleave="work=false" v-if="work==true" class="mt-1 transition-fast-in-fast-out white--text" style="position:absolute;font-size:14px">
+                                                                    <v-flex @click="movePage(7)" class="mb-1">WELFARE</v-flex>
+                                                                    <v-flex @click="movePage(7)" class="mb-1">OFFICE</v-flex>
+                                                                    <v-flex @click="movePage(7)">RECRUIT</v-flex>
+                                                                </v-flex>
+                                                            </v-expand-transition>
+                                                        </v-hover>
+                                                    </v-flex>
+                                                </v-layout>
                                             </v-flex>
                                         </v-layout>
                                     </v-flex>
@@ -94,7 +98,7 @@
                             </v-layout>
                         </v-flex>
                     </v-layout>
-                    <v-layout class="section">
+                    <v-layout class="section main_3">
                         <v-flex style="height:100%;">
                             <v-layout style="height:50%">
                                 <v-flex xs6><img src="@/assets/web/img/background/section3_1.png" width="100%" height="100%"></v-flex>
@@ -117,19 +121,19 @@
                             </v-layout>
                         </v-flex>
                     </v-layout>
-                    <v-layout class="section">
+                    <v-layout class="section main_4">
                         <v-flex style="height:100%;display:flex;flex-direction:column">
                             <v-flex style="height:75%;flex:1">
                                 <v-flex class="my-15" style="font-size:40px;text-align:center;font-weight:600">오아시스 미디어는 자체 생산 체제입니다</v-flex>
                                 <v-layout justify-center class="my-10 px-15" style="font-size:30px;color:#fff">
-                                    <v-flex md11 lg10>
+                                    <v-flex xs12 lg10>
                                         <v-layout align-center justify-space-between>
-                                            <v-flex lg2>
+                                            <v-flex md2 lg2 class="mx-2">
                                                 <v-layout align-center class="section4_1">
                                                     <v-flex style="text-align:center">자체제작</v-flex>
                                                 </v-layout>
                                             </v-flex>
-                                            <v-flex lg2>
+                                            <v-flex md2 lg2 class="mx-2">
                                                 <v-layout align-center class="section4_2">
                                                     <v-flex style="text-align:center">
                                                         <v-flex>빠른</v-flex>
@@ -137,7 +141,7 @@
                                                     </v-flex>
                                                 </v-layout>
                                             </v-flex>
-                                            <v-flex lg2>
+                                            <v-flex md2 lg2 class="mx-2">
                                                 <v-layout align-center class="section4_3">
                                                     <v-flex style="text-align:center">
                                                         <v-flex>제작기간</v-flex>
@@ -145,7 +149,7 @@
                                                     </v-flex>
                                                 </v-layout>
                                             </v-flex>
-                                            <v-flex lg2>
+                                            <v-flex md2 lg2 class="mx-2">
                                                 <v-layout align-center class="section4_4">
                                                     <v-flex style="text-align:center">
                                                         <v-flex>비용</v-flex>
@@ -221,8 +225,10 @@ export default {
 
 <style>
     .fp-tableCell{display: flex; align-items: center;width:100%}
-    .main_1{background-image:url('../../../assets/web/img/background/section1.png'); background-size: 100% 100%;background-position: center;color:#fff;position: relative;}
-    .main_2{background-image: url('../../../assets/web/img/background/section2.png'); background-size: 100% 100%;background-position: center;color:#fff;position: relative;text-align: center;}
+    .main_1{background-image:url('../../../assets/web/img/background/section1.png'); background-size: 100% 100%;background-position: center;color:#fff;position: relative;min-width:1300px;}
+    .main_2{background-image: url('../../../assets/web/img/background/section2.png'); background-size: 100% 100%;background-position: center;color:#fff;position: relative;text-align: center; min-width: 1300px;}
+    .main_3{min-width: 1300px;}
+    .main_4{min-width: 1300px;}
     .section4_1{background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../../assets/web/img/background/section4_1.png'); background-size: 100% 100%;background-position: center;width:250px;height:250px;border-radius: 70%;overflow: hidden;}
     .section4_2{background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../../assets/web/img/background/section4_2.png'); background-size: 100% 100%;background-position: center;width:250px;height:250px;border-radius: 70%;overflow: hidden;}
     .section4_3{background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../../assets/web/img/background/section4_3.png'); background-size: 100% 100%;background-position: center;width:250px;height:250px;border-radius: 70%;overflow: hidden;}

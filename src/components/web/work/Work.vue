@@ -3,7 +3,7 @@
         <v-layout style="height:100%">
             <v-flex>
                 <Header/>
-                <v-flex class="mt-8">
+                <v-flex class="mt-8 work_wrap">
                     <v-flex class="py-5 px-15" style="background:#303030;color:#fff">
                         <v-flex class="mb-15" style="text-align:center;font-size:50px;font-weight:600">WELFARE</v-flex>
                         <v-layout class="mb-15" style="font-size:20px">
@@ -49,7 +49,7 @@
                         </v-layout>
                         <v-flex class="mb-15" style="text-align:center;font-size:50px;font-weight:600">OFFICE</v-flex>
                         <v-layout class="mb-10">
-                            <v-flex lg6>
+                            <v-flex xs6>
                                 <v-carousel class="pa-15" hide-delimiters>
                                     <v-carousel-item
                                     v-for="(item,i) in items"
@@ -60,8 +60,8 @@
                                     </v-carousel-item>
                                 </v-carousel>
                             </v-flex>
-                            <v-flex lg6>
-                                <v-flex class="mr-15" style="text-align:center;font-size:23px"><v-icon size="30" color="#fff">mdi-map-marker</v-icon>서울특별시 금천구 가산디지털로 2로 136, 801호 (-33)(가산동,승일벤처타워)</v-flex>
+                            <v-flex xs6>
+                                <v-flex class="mr-15" style="text-align:center;font-size:23px"><v-icon size="30" color="#fff">mdi-map-marker</v-icon>서울특별시 강남구 역삼로247 (역삼동,홍진빌딩 3층)</v-flex>
                                 <v-flex class="pa-6" style="height:100%">
                                     <vue-daum-map
                                     :appKey="appKey"
@@ -71,7 +71,7 @@
                                     :libraries="libraries"
                                     @load="onLoad"
                                     @update:center="center=$event"
-                                    class="daum_map" 
+                                    class="daum_map_web" 
                                     />
                                 </v-flex>
                             </v-flex>
@@ -82,11 +82,11 @@
                         <v-flex class="mx-15 pb-5" style="font-size:35px;font-weight:600;border-bottom:2px solid #000">오아시스 미디어 채용공고</v-flex>
                         <v-layout align-center class="mx-15 mt-5 pb-5" style="border-bottom:2px solid #000">
                             <v-flex style="font-size:30px">[채용]진행중인 공고가 없습니다.</v-flex>
-                            <v-flex md2 lg1 class="py-2" style="background:#E86610;color:#fff;border-radius:11px;text-align:center;font-size:20px;cursor:pointer">공고확인하기</v-flex>
+                            <v-flex md2 lg1 class="py-2" style="background:#E86610;color:#fff;border-radius:11px;text-align:center;font-size:18px;cursor:pointer">공고확인하기</v-flex>
                         </v-layout>
                         <v-layout align-center class="mx-15 mt-5 mb-10">
                             <v-flex style="font-size:30px">[채용]진행중인 공고가 없습니다.</v-flex>
-                            <v-flex md2 lg1 class="py-2" style="background:#E86610;color:#fff;border-radius:11px;text-align:center;font-size:20px;cursor:pointer">공고확인하기</v-flex>
+                            <v-flex md2 lg1 class="py-2" style="background:#E86610;color:#fff;border-radius:11px;text-align:center;font-size:18px;cursor:pointer">공고확인하기</v-flex>
                         </v-layout>
                     </v-flex>
                 </v-flex>
@@ -126,7 +126,7 @@ export default {
         ],
 
             appKey: config.appKey,
-            center: {lat:37.466921132779405, lng:126.88816005535757}, // 지도의 중심 좌표
+            center: {lat:37.49794514999162, lng:127.0431446387925}, // 지도의 중심 좌표
             level: 2, // 지도의 레벨(확대, 축소 정도),
             mapTypeId: VueDaumMap.MapTypeId.NORMAL, // 맵 타입
             libraries: [], // 추가로 불러올 라이브러리
@@ -136,7 +136,7 @@ export default {
     methods:{
         onLoad(map){
             this.map = map;
-            var markerPosition = new kakao.maps.LatLng(37.466921132779405,126.88816005535757)
+            var markerPosition = new kakao.maps.LatLng(37.49794514999162,127.0431446387925)
             var marker = new kakao.maps.Marker({
                 position: markerPosition,
             })
@@ -148,7 +148,8 @@ export default {
 
 
 <style>
-    .daum_map{
+    .daum_map_web{
         width:40vw;height:47vh;
     }
+    .work_wrap{min-width: 1400px;}
 </style>
