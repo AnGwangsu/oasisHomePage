@@ -25,7 +25,7 @@
                                     </v-layout>
                                 </v-flex>
                             </v-flex>
-                            <v-flex xs4 class="mx-10" style="height:650px">
+                            <v-flex xs5 class="mx-10" style="height:650px">
                                 <img class="px-10" src="@/assets/web/img/background/list1.png" width="100%" height="100%">
                             </v-flex>
                         </v-layout>

@@ -14,7 +14,7 @@
                         <v-flex class="mb-1"><v-icon color="#48f3f0">mdi-email</v-icon>oasisent.a@gmail.com</v-flex>
                         <v-flex class="mb-1"><v-icon color="#48f3f0">mdi-phone-in-talk</v-icon>02-556-0101</v-flex>
                         <v-flex class="mb-1">사업자 등록번호:389-81-01366</v-flex>
-                        <v-flex class="mb-3">주소:서울특별시 금천구 가산디지털로 2로 136, 801호 (-33)(가산동,승일벤처타워)</v-flex>
+                        <v-flex class="mb-3">주소:서울특별시 강남구 역삼로247 3층(역삼동,홍진빌딩)</v-flex>
                         <v-flex>Copyright ⓒ 2018 ENTERTAINMENT. ALL rights reserved.</v-flex>
                     </v-flex>
                 </v-flex>

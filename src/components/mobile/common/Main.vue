@@ -113,9 +113,9 @@
                     <v-layout class="section main_4" style="height:100%">
                         <v-flex>
                             <v-flex>
-                                <v-flex class="mb-10 px-6" style="font-size:26px;font-weight:600">PARTNERS</v-flex>
-                                <v-flex class="px-6 mb-5" style="font-size:12px;font-weight:600">오아시스 미디어는 다양한 분야의 브랜드, 서비스, 공공기관과 함께하고 있습니다.</v-flex>
-                                <v-flex class="px-6" style="height:100%">
+                                <v-flex class="my-8 px-4" style="font-size:26px;font-weight:600">PARTNERS</v-flex>
+                                <v-flex class="px-4 mb-8" style="font-size:12px;font-weight:600">오아시스 미디어는 다양한 분야의 브랜드, 서비스, 공공기관과 함께하고 있습니다.</v-flex>
+                                <v-flex class="px-4" style="height:100%">
                                     <v-layout class="mb-5" align-center>
                                         <v-flex xs3 class="mx-2">
                                             <img src="@/assets/mobile/img/partners/partner1.png" width="100%" height="100%">
@@ -183,7 +183,7 @@
                                             <img src="@/assets/mobile/img/partners/partner19.png" width="100%" height="100%">
                                         </v-flex>
                                         <v-flex xs3 class="mx-2">
-                                            <img src="@/assets/mobile/img/partners/partner20.png" width="100%" height="100%">
+                                            <img src="@/assets/mobile/img/partners/test.png" width="100%" height="100%">
                                         </v-flex>
                                     </v-layout>
                                     <v-layout class="mb-5" align-center>
@@ -204,8 +204,10 @@
                             </v-flex>
                         </v-flex>
                     </v-layout>
+                    <v-layout class="section fp-auto-height" id="footer">
+                        <Footer/>
+                    </v-layout>
                 </full-page>
-                <Footer/>
             </v-flex>
         </v-layout>
     </v-container>
@@ -223,7 +225,6 @@ export default {
         return {
             options:{
                 afterLoad:this.afterLoad,
-                autoScrolling:false
             },
             blackAppbar:false,
             dialog:false
@@ -233,12 +234,14 @@ export default {
         if(this.$route.params.number){
             this.$refs.fullpage.api.moveTo(4)
         }
+        var footer = document.getElementById('footer')
+        footer.style.height=174+'px'
     },
     methods:{
         afterLoad(_,destination){
             this.blackAppbar=false
             this.trigger=destination.index
-            if(destination.index===3){
+            if(destination.index===3 || destination.index==4){
                 this.blackAppbar=true
             }
         },
@@ -280,4 +283,5 @@ export default {
         0% {margin-top: 0px;}
         100% {margin-top: 10px;}
     }
+    #footer .fp-tableCell{width: 100%;}
 </style>

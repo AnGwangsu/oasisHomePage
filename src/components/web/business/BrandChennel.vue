@@ -45,17 +45,17 @@
                                     <v-flex class="mx-15 px-3 pt-3" style="border:1px solid rgba(54,54,54,.3);height:450px;border-radius:16px 16px 0 0"><img src="@/assets/web/img/background/brand3_1.png" height="100%" width="100%"></v-flex>
                                     <v-flex class="mx-15 mt-8" style="text-align:center">
                                         <v-flex class="mb-3" style="font-size:25px;color:#741DD8;font-weight:600">LIVE - commerce</v-flex>
-                                        <v-flex class="mb-3" style="font-weight:600;font-size:18px">브랜딩을 넘어 판매까지!</v-flex>
-                                        <v-flex class="mx-5" style="font-size:18px;color:rgba(54,54,54,.8)">브랜드 특성에 맞는 크리에이터를 매칭하여 기획부터 리포트 까지 최적화 된 콜라보레이션을 제안합니다</v-flex>
+                                        <v-flex class="mb-3" style="font-weight:600;font-size:18px">브랜딩을 넘어 판매</v-flex>
+                                        <v-flex class="mx-5" style="font-size:18px;color:rgba(54,54,54,.8)">크리에이터 콜라보레이션을 통해 라이브 · 공동구매 등 세일즈 프로모션을 진행하여 소비자들에게 상품의 사용법과 장점을 전달하고 판매까지 연계합니다</v-flex>
                                     </v-flex>
                                 </v-flex>
                                 <v-flex xs2></v-flex>
                                 <v-flex xs4 md4 lg3>
                                     <v-flex class="mx-15 px-3 pt-3" style="border:1px solid rgba(54,54,54,.3);height:450px;border-radius:16px 16px 0 0"><img src="@/assets/web/img/background/brand3_2.png" height="100%" width="100%"></v-flex>
                                     <v-flex class="mx-15 mt-8" style="text-align:center">
-                                        <v-flex class="mb-3" style="font-size:25px;color:#741DD8;font-weight:600">Brand Channel</v-flex>
-                                        <v-flex style="font-weight:600;font-size:18px">브랜드도 하나의 크리에이터다</v-flex>
-                                        <v-flex class="mx-5" style="font-size:18px;color:rgba(54,54,54,.8)">다양한 노하우를 통해, 브랜드와 소비자간 니즈를 파악하여 최적화 된 컨텐츠와 채널을 대행하며 제작 · 운영합니다</v-flex>
+                                        <v-flex class="mb-3" style="font-size:25px;color:#741DD8;font-weight:600">IMC Consulting</v-flex>
+                                        <v-flex style="font-weight:600;font-size:18px">유튜브 기반 통합 마케팅 전략 제안</v-flex>
+                                        <v-flex class="mx-5" style="font-size:18px;color:rgba(54,54,54,.8)">온라인 · 오프라인의 경계를 넘어 브랜드의 크리에이티브한 아이덴티티를 창작합니다. 또한 합리적인 광고 · 마케팅 전략을 제안합니다</v-flex>
                                     </v-flex>
                                 </v-flex>
                             </v-layout>
