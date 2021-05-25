@@ -4,7 +4,7 @@
             <v-flex>
                 <full-page ref="fullpage" id="fullpage">
                     <v-layout class="section">
-                        <v-flex class="business_1">
+                        <v-flex class="business_web_1">
                             <Header/>
                             <v-layout class="mx-15" align-center style="color:#fff;height:100%">
                                 <v-flex class="mx-15" style="font-size:50px">
@@ -15,10 +15,10 @@
                             </v-layout>
                         </v-flex>
                     </v-layout>
-                    <v-layout class="section">
+                    <v-layout class="section brand_web_2">
                         <v-flex>
                             <v-layout justify-center>
-                                <v-flex lg3>
+                                <v-flex xs4 md4 lg3>
                                     <v-flex class="mx-15 px-3 pt-3" style="border:1px solid rgba(54,54,54,.3);height:450px;border-radius:16px 16px 0 0"><img src="@/assets/web/img/background/brand2_1.png" height="100%" width="100%"></v-flex>
                                     <v-flex class="mx-15 mt-8" style="text-align:center">
                                         <v-flex class="mb-3" style="font-size:25px;color:#741DD8;font-weight:600">Brand Collaboration</v-flex>
@@ -26,8 +26,8 @@
                                         <v-flex class="mx-5" style="font-size:18px;color:rgba(54,54,54,.8)">브랜드 특성에 맞는 크리에이터를 매칭하여 기획부터 리포트 까지 최적화 된 콜라보레이션을 제안합니다</v-flex>
                                     </v-flex>
                                 </v-flex>
-                                <v-flex lg3></v-flex>
-                                <v-flex lg3>
+                                <v-flex xs2></v-flex>
+                                <v-flex xs4 md4 lg3>
                                     <v-flex class="mx-15 px-3 pt-3" style="border:1px solid rgba(54,54,54,.3);height:450px;border-radius:16px 16px 0 0"><img src="@/assets/web/img/background/brand2_2.png" height="100%" width="100%"></v-flex>
                                     <v-flex class="mx-15 mt-8" style="text-align:center">
                                         <v-flex class="mb-3" style="font-size:25px;color:#741DD8;font-weight:600">Brand Channel</v-flex>
@@ -38,10 +38,10 @@
                             </v-layout>
                         </v-flex>
                     </v-layout>
-                    <v-layout class="section">
+                    <v-layout class="section brand_web_3">
                         <v-flex style="display:flex;flex-direction:column;height:100%">
                             <v-layout class="mt-10" justify-center style="flex:1">
-                                <v-flex lg3>
+                                <v-flex xs4 md4 lg3>
                                     <v-flex class="mx-15 px-3 pt-3" style="border:1px solid rgba(54,54,54,.3);height:450px;border-radius:16px 16px 0 0"><img src="@/assets/web/img/background/brand3_1.png" height="100%" width="100%"></v-flex>
                                     <v-flex class="mx-15 mt-8" style="text-align:center">
                                         <v-flex class="mb-3" style="font-size:25px;color:#741DD8;font-weight:600">LIVE - commerce</v-flex>
@@ -49,8 +49,8 @@
                                         <v-flex class="mx-5" style="font-size:18px;color:rgba(54,54,54,.8)">브랜드 특성에 맞는 크리에이터를 매칭하여 기획부터 리포트 까지 최적화 된 콜라보레이션을 제안합니다</v-flex>
                                     </v-flex>
                                 </v-flex>
-                                <v-flex lg3></v-flex>
-                                <v-flex lg3>
+                                <v-flex xs2></v-flex>
+                                <v-flex xs4 md4 lg3>
                                     <v-flex class="mx-15 px-3 pt-3" style="border:1px solid rgba(54,54,54,.3);height:450px;border-radius:16px 16px 0 0"><img src="@/assets/web/img/background/brand3_2.png" height="100%" width="100%"></v-flex>
                                     <v-flex class="mx-15 mt-8" style="text-align:center">
                                         <v-flex class="mb-3" style="font-size:25px;color:#741DD8;font-weight:600">Brand Channel</v-flex>
@@ -88,5 +88,7 @@ export default {
 </script>
 
 <style>
-    .business_1{background-image:url('../../../assets/web/img/background/brand1.png'); background-size: 100% 100%;background-position:center;height:100%;position: relative;}
+    .business_web_1{background-image:url('../../../assets/web/img/background/brand1.png'); background-size: 100% 100%;background-position:center;height:100%;position: relative; min-width:1300px;}
+    .brand_web_2{min-width: 1400px;}
+    .brand_web_3{min-width: 1400px;}
 </style>

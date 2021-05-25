@@ -1,5 +1,5 @@
 <template>
-    <v-footer color="#303030">
+    <v-footer color="#303030" style="min-width:1400px">
         <v-layout>
             <v-flex>
                 <v-layout class="mt-5">

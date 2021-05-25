@@ -12,17 +12,17 @@ export default [
     },
     {
         path:'/m/business',
-        name:'Business',
+        name:'MobileBusiness',
         component:Business
     },
     {
         path:"/m/creator",
-        name:'Creator',
+        name:'MobileCreator',
         component:Creator
     },
     {
         path:'/m/work',
-        name:'Work',
+        name:'MobileWork',
         component:Work
     }
 ]

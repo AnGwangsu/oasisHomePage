@@ -14,7 +14,7 @@
                             <v-flex style="font-size:20px;font-weight:600">HI PRAE</v-flex>
                             <v-layout class="mt-5">
                                 <v-flex xs5><a href="https://www.instagram.com/baboprae/?hl=ko"><img src="@/assets/mobile/img/icon/instagram.png" width="30" height="30"></a></v-flex>
-                                <v-flex xs7><img src="@/assets/mobile/img/icon/youtube.png" width="30" height="30"></v-flex>
+                                <v-flex xs7><a href="https://www.youtube.com/channel/UCqayQickf1r8kjZyay4proQ"><img src="@/assets/mobile/img/icon/youtube.png" width="30" height="30"></a></v-flex>
                             </v-layout>
                         </v-flex>
                     </v-flex>
