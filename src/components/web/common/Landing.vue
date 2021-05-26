@@ -25,10 +25,10 @@
                                                         </v-hover>
                                                     </v-flex>
                                                     <v-flex class="mx-5" style="cursor:pointer">
-                                                        <v-flex @mouseover="creator=true" @mouseleave="creator=false">CREATOR</v-flex>
+                                                        <v-flex @mouseover="creator=true" @mouseleave="creator=false" @click="movePage(4)">CREATOR</v-flex>
                                                         <v-hover>
                                                             <v-expand-transition>
-                                                                <v-flex @mouseover="creator=true" @mouseleave="creator=false" v-if="creator==true" class="mt-1 transition-fast-in-fast-out white--text" style="position:absolute;font-size:14px">
+                                                                <v-flex @mouseover="creator=true" @mouseleave="creator=false"  v-if="creator==true" class="mt-1 transition-fast-in-fast-out white--text" style="position:absolute;font-size:14px">
                                                                     <v-flex @click="movePage(4)" class="mb-1">LIST</v-flex>
                                                                     <v-flex @click="movePage(5)">BENEFITS</v-flex>
                                                                 </v-flex>
