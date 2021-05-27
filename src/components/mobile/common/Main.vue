@@ -117,86 +117,86 @@
                                 <v-flex class="px-4 mb-8" style="font-size:12px;font-weight:600">오아시스 미디어는 다양한 분야의 브랜드, 서비스, 공공기관과 함께하고 있습니다.</v-flex>
                                 <v-flex class="px-4" style="height:100%">
                                     <v-layout class="mb-5" align-center>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="mx-1">
                                             <img src="@/assets/mobile/img/partners/partner1.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="mx-1">
                                             <img src="@/assets/mobile/img/partners/partner2.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="px-3 mx-1">
                                             <img src="@/assets/mobile/img/partners/partner3.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="px-2 mx-1">
                                             <img src="@/assets/mobile/img/partners/partner4.png" width="100%" height="100%">
                                         </v-flex>
                                     </v-layout>
-                                    <v-layout class="mb-5" align-center>
-                                        <v-flex xs3 class="mx-2">
+                                    <v-layout class="mb-3" align-center>
+                                        <v-flex xs3 class="px-3 mx-1">
                                             <img src="@/assets/mobile/img/partners/partner5.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="mx-1 px-4">
                                             <img src="@/assets/mobile/img/partners/partner6.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="px-3 mx-1">
                                             <img src="@/assets/mobile/img/partners/partner7.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="mx-1 px-1">
                                             <img src="@/assets/mobile/img/partners/partner8.png" width="100%" height="100%">
                                         </v-flex>
                                     </v-layout>
-                                    <v-layout class="mb-5" align-center>
-                                        <v-flex xs3 class="mx-2">
+                                    <v-layout class="mb-3" align-center>
+                                        <v-flex xs3 class="mx-1">
                                             <img src="@/assets/mobile/img/partners/partner9.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="px-3 mx-1">
                                             <img src="@/assets/mobile/img/partners/partner10.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="mx-1">
                                             <img src="@/assets/mobile/img/partners/partner11.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="mx-1 px-2">
                                             <img src="@/assets/mobile/img/partners/partner12.png" width="100%" height="100%">
                                         </v-flex>
                                     </v-layout>
-                                    <v-layout class="mb-5" align-center>
-                                        <v-flex xs3 class="mx-2">
+                                    <v-layout class="mb-3" align-center>
+                                        <v-flex xs3 class="mx-1">
                                             <img src="@/assets/mobile/img/partners/partner13.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="px-3 mx-1">
                                             <img src="@/assets/mobile/img/partners/partner14.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="mx-1 px-1">
                                             <img src="@/assets/mobile/img/partners/partner15.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="mx-1 px-2">
                                             <img src="@/assets/mobile/img/partners/partner16.png" width="100%" height="100%">
                                         </v-flex>
                                     </v-layout>
-                                    <v-layout class="mb-5" align-center>
-                                        <v-flex xs3 class="mx-2">
+                                    <v-layout class="mb-3" align-center>
+                                        <v-flex xs3 class="mx-1 px-1">
                                             <img src="@/assets/mobile/img/partners/partner17.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="px-4 mx-1">
                                             <img src="@/assets/mobile/img/partners/partner18.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="mx-1 px-2">
                                             <img src="@/assets/mobile/img/partners/partner19.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
-                                            <img src="@/assets/mobile/img/partners/test.png" width="100%" height="100%">
+                                        <v-flex xs3 class="mx-1 px-1">
+                                            <img src="@/assets/mobile/img/partners/partner20.png" width="100%" height="100%">
                                         </v-flex>
                                     </v-layout>
                                     <v-layout class="mb-5" align-center>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="mx-1">
                                             <img src="@/assets/mobile/img/partners/partner21.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="mx-1 px-2">
                                             <img src="@/assets/mobile/img/partners/partner22.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="mx-1 px-2">
                                             <img src="@/assets/mobile/img/partners/partner23.png" width="100%" height="100%">
                                         </v-flex>
-                                        <v-flex xs3 class="mx-2">
+                                        <v-flex xs3 class="mx-1 px-2">
                                             <img src="@/assets/mobile/img/partners/partner24.png" width="100%" height="100%">
                                         </v-flex>
                                     </v-layout>

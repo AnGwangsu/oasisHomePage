@@ -3,7 +3,7 @@
     <v-main style="padding:0;">
       <router-view/>
       <!-- <router-view v-else name="mobile"/> -->
-      <v-flex class="quickMenu" v-if="isMobile==true">
+      <!-- <v-flex class="quickMenu" v-if="isMobile==true">
         <img src="@/assets/mobile/img/icon/quickMenu.png" width="50" height="50" style="cursor:pointer" @click="dialog=true">
         <v-dialog v-model="dialog" width="80%" style="border-radius:12px">
           <v-card style="border-radius:12px">
@@ -21,7 +21,7 @@
             </v-layout>
           </v-card>
         </v-dialog>
-      </v-flex>
+      </v-flex> -->
     </v-main>
   </v-app>
 </template>
@@ -46,29 +46,29 @@ export default {
   // },
   created(){
     // window.addEventListener('beforeunload',this.removeExist)
-    this.mobileCheck()
+    // this.mobileCheck()
   },
   methods:{
-    // removeExist(){
-    //   localStorage.removeItem('exist')
-    //   localStorage.removeItem('isMobile')
-    // },
-    mobileCheck(){
-      var pcDevice = "win16|win32|win64|mac|macintel";
-        if ( navigator.platform ) {
-          if ( pcDevice.indexOf(navigator.platform.toLowerCase()) < 0 ) {
-              this.isMobile=true
-              this.$router.push({
-                path:'/m'
-              })
-          } else {
-              this.isMobile=false
-              this.$router.push({
-                path:'/'
-              })
-          }
-        }   
-    }
+    removeExist(){
+      localStorage.removeItem('exist')
+      localStorage.removeItem('isMobile')
+    },
+    // mobileCheck(){
+    //   var pcDevice = "win16|win32|win64|mac|macintel";
+    //     if ( navigator.platform ) {
+    //       if ( pcDevice.indexOf(navigator.platform.toLowerCase()) < 0 ) {
+    //           this.isMobile=true
+    //           this.$router.push({
+    //             path:'/m'
+    //           })
+    //       } else {
+    //           this.isMobile=false
+    //           this.$router.push({
+    //             path:'/'
+    //           })
+    //       }
+    //     }   
+    // }
   }
 };
 </script>
