@@ -20,7 +20,7 @@
                     </v-flex>
                     <v-flex xs6 class="creator_1"></v-flex>
                 </v-layout>
-                <v-layout align-center style="background:#303030">
+                <!-- <v-layout align-center style="background:#303030">
                     <v-flex style="color:#fff;text-align:center;">
                         <v-flex class="mt-10">
                             <v-flex class="mb-3" style="font-size:21px">PARTNER CREATOR</v-flex>
@@ -143,7 +143,7 @@
                             </v-carousel>
                         </v-flex>
                     </v-flex>
-                </v-layout>
+                </v-layout> -->
                 <v-layout align-center class="creator_3" style="height:413px">
                     <v-flex>
                         <v-flex class="mb-10" style="text-align:center;font-size:20px">

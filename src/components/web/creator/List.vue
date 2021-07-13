@@ -1,6 +1,6 @@
 <template>
     <v-container fluid style="padding:0;height:100%">
-        <v-layout>
+        <v-layout style="height:100vh">
             <v-flex>
                 <Header/>
                 <v-flex class="mt-10 list_wrap">
@@ -30,7 +30,7 @@
                             </v-flex>
                         </v-layout>
                     </v-flex>
-                    <v-flex class="py-15" style="background:#F3F3F3;">
+                    <!-- <v-flex class="py-15" style="background:#F3F3F3;">
                         <v-flex class="mb-10" style="text-align:center;font-size:60px;color:#741DD8;font-weight:600">PARTNER CREATOR</v-flex>
                         <v-layout>
                             <v-flex xs3>
@@ -63,7 +63,7 @@
                             </v-flex>
                         </v-layout>
                         <v-flex class="mt-15" style="font-size:40px;text-align:center;font-weight:600">1000여명의 인플루언서와 함께합니다</v-flex>
-                    </v-flex>
+                    </v-flex> -->
                 </v-flex>
             </v-flex>
         </v-layout>
